@@ -8,21 +8,21 @@
     .container {
         width: 100%;
         min-height: 100vh;
-        background: linear-gradient(135deg, #082158, #9f1cc0);
+        background: linear-gradient(135deg, #031c53, #63067a);
         padding: 10px;
     }
 
     .todo-app {
         width: 100%;
         max-width: 540px;
-        background: #645050;
+        background: #e0dddd;
         margin: 100px auto 20px;
         padding: 40px 30px 70px;
         border-radius: 10px;
     }
 
     .todo-app h2 {
-        color: #002765;
+        color: #610404;
         display: flex;
         align-items: center;
         margin-bottom: 20px;
@@ -85,4 +85,32 @@
         background-position: center;
         top: 12px;
         left: 8px;
+    }
+
+    ul li.checked {
+        color: #740202;
+        text-decoration: line-through;
+    }
+
+    ul li.checked::before {
+        background-image: url(images/checked.jpg);
+    }
+
+    ul li span {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        color: #ee0808;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+
+    }
+
+    ul li span:hover {
+        background: #3105f5;
+
     }
